@@ -1,24 +1,16 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+<h1>Create a Rails project to model the relationships between people and houses</h1>
 
-Things you may want to cover:
+<br/>
+<hr>
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+* Create a new rails project using PostgreSQL.
+* Create the database.
+* Create a Person model with name and house_id.
+* Create a House model with address.
+* Create Associations for Houses with People such that Houses can have many residents. 
+ and each Person belongs to a house, this relies on specifying the correct primary_key, foreign_key, and class_name.
+  
+<br/>
+<hr>
