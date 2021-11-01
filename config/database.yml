@@ -17,6 +17,10 @@
 default: &default
   adapter: postgresql
   encoding: unicode
+  host: localhost
+  username: postgres
+  password: dranwood
+  port: 5432
   # For details on connection pooling, see Rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
@@ -78,8 +82,8 @@ test:
 #   production:
 #     url: <%= ENV['DATABASE_URL'] %>
 #
-production:
-  <<: *default
-  database: models_intro_production
-  username: models_intro
-  password: <%= ENV['MODELS_INTRO_DATABASE_PASSWORD'] %>
+#production:
+#  <<: *default
+#  database: models_intro_production
+#  username: models_intro
+#  password: <%= ENV['MODELS_INTRO_DATABASE_PASSWORD'] %>
